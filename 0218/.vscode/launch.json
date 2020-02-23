@@ -2,6 +2,14 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "(lldb) 接続",
+            "type": "cppdbg",
+            "request": "attach",
+            "program": "プログラム名を入力してください (例: ${workspaceFolder}/a.out)",
+            "processId": "${command:pickProcess}",
+            "MIMode": "lldb"
+        },
+        {
             "name": "(lldb) Launch",
             "type": "cppdbg",
             "request": "launch",
