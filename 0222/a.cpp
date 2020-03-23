@@ -5,13 +5,17 @@ using namespace std;
 
 int main(){
     string s,t,u;
-    int a,b;
-    cin>>a>>b;
+    int N,K;
+    cin>>N>>K;
+    bool flag=true;
+    int sum=K;
+    int i=0;
 
-    if(a>=10){
-        cout<<b<<endl;
-    }
-    else{
-        cout<<b+100*(10-a)<<endl;
+    while(flag){
+        sum*=K;
+        i++;
+        if(sum>N){
+            cout<<i-1<<endl;
+        }
     }
 }
